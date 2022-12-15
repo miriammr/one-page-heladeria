@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Pop | Helados Artesanales</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="css/hamburgers.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Poppins:wght@100;200;300;500&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" href="imagenes/logo2.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script src="js/script.js"></script>
+  </head>
+  
+  <body>
+
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li class="fb">
+            <a href="#"><img src="imagenes/fb.svg" /></a>
+          </li>
+          <li class="inst">
+            <a href="#"><img src="imagenes/instagram.svg" /></a>
+          </li>
+          <li class="youtube">
+            <a href="#"><img src="imagenes/youtube.svg" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-container">
+        <div class="logo">
+          <a href="index.html"><img src="imagenes/logo.png" alt="Logo Ice Pop" /></a>
+        </div>
+        <div class="top-bar">
+          <button
+            id="burger"
+            class="hamburger hamburger--3dx"
+            type="button"
+            onclick="toggleMenu()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <nav id="navegacion" class="menu menu-mob">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#carta">Carta</a></li>
+              <li><a href="#pedido">Delivery</a></li>
+              <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+      </div>
+
+      <div class="slider">
+        <ul>
+          <li class="slider-1 slider-contenido">
+            <div>
+              <h2>¡DELICIOSOS!</h2>
+              <p>Variedad de Sabores y combinaciones</p>
+            </div>
+            <button><a href="#carta">Ver Sabores</a></button>
+          </li>
+          <li class="slider-2 slider-contenido">
+            <div>
+              <h2>INGREDIENTES NATURALES</h2>
+              <p>Helados hechos como en casa</p>
+            </div>
+            <button>Ver Ofertas</button>
+          </li>
+          <li class="slider-3 slider-contenido">
+            <div>
+              <h2>¡DELIVERY GRATIS!</h2>
+              <p>Mira la Carta y paga sin complicaciones</p>
+            </div>
+            <button><a href="#pedido">Realizar Pedido</a></button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="darkbg" class="dark-bg" onclick="toggleMenu()"></div>
+      <section class="divisiones">
+        <div>
+          <img src="imagenes/helado1.png"/>
+          <p>Cumplimos con todos los <b>estándares de calidad</b></p>
+        </div>
+        <div>
+          <p>Envasados con materiales biodegradables</p>
+          <button>Ver más</button>
+        </div>
+        <div>
+          <img src="imagenes/helado2.png"/>
+          <p>Sabores <b>irresistibles</b></p>
+        </div>
+      </section>    
+
+      <section id="carta" class="carta">
+        <h3>Elige lo que más te guste</h3>
+        <div class="carta-container">
+          <div class="image-carta">
+            <img src="imagenes/helado3.jpg" alt="Helado">
+          </div>
+          <table>
+            <tr>
+              <th>Sabores</th>
+              <th>Complementos</th>
+              <th>Toppings</th>
+            </tr>
+            <tr>
+              <td>Fresa</td>
+              <td>Minioreos</td>
+              <td>Caramelo</td>
+            </tr>
+            <tr>
+              <td>Mango</td>
+              <td>Cereales</td>
+              <td>Sirope kinder/ nutella</td>
+            </tr>
+            <tr>
+              <td>Plátano</td>
+              <td>Galletas</td>
+              <td>Sirope Chocolate</td>
+            </tr>
+            <tr>
+              <td>Guanabana</td>
+              <td>Virutas chocolate</td>
+              <td>Sirope fresa</td>
+            </tr>
+            <tr>
+              <td>Papaya</td>
+              <td>Virutas de colores</td>
+              <td>Sirope dulce de leche</td>
+            </tr>
+            <tr>
+              <td>Chocochips</td>
+              <td>Fruta</td>
+              <td>Chocolate blanco</td>
+            </tr>
+            <tr>
+              <td>Coco</td>
+              <td>Gomitas</td>
+              <td>Chocolate caliente</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="informacion">
+        <div>
+          <i class="material-icons">verified_user</i>
+          <p>Calidad</p>
+        </div>
+        <div>
+          <i class="material-icons">speed</i>
+          <p>Rapidez</p>
+        </div>
+        <div>
+          <i class="material-icons">emoji_events</i>
+          <p>Excelencia</p>
+        </div>
+        <div>
+          <i class="material-icons">handshake</i>
+          <p>Confianza</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Contáctanos</h3>
+
+        <div id="contacto" class="contacto">
+          <div></div>
+
+          <div>
+            <h4>Déjanos tus datos:</h4>
+            <form action="">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Juan" />
+              <label for="apellidos">Apellidos</label>
+              <input type="text" id="apellidos" placeholder="Sanchez" />
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" placeholder="ejemplo@gmail.com" />
+
+              <button>Enviar</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="pedido" class="pedido">
+        <p>Haz tu pedido online</p>
+        <button>Pedir Online</button>
+      </section>
+
+      <section class="video">
+        <div>
+          <h4>Aprende a hacer deliciosos helados dede casa</h4>
+          <p>
+            Para refrescarnos este verano, nada mejor que un helado artesanal
+            hecho con frutos de la Agricultura Familiar. <br> Pilar Soto,
+            especialista en helados artesanales, nos enseña cómo hacer nuestros
+            propios helados en casa.
+          </p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.youtube.com/embed/Hi-MaGBuWKQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5139979716378!2d-77.01565908548405!3d-12.145369291401698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7f688c46131%3A0x843177dc4a651c4d!2sAv.%20Jorge%20Chavez%20543%2C%20Santiago%20de%20Surco%2015049!5e0!3m2!1ses-419!2spe!4v1639541708716!5m2!1ses-419!2spe"
+        width="100%"
+        height="250"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"></iframe>
+    </div>
+
+    <footer>
+      <div>
+        <img src="imagenes/logo2.png" alt="Logo Ice Cream" />
+      </div>
+      
+      <div>
+        <span><i class="material-icons">pin_drop</i>Dirección</span>
+        <p>Av. Jorge Chavez Nº 543</p>
+        <span><i class="material-icons">update</i>Horarios de Atención</span>
+        <p>Lunes - Domingo: 10:00 - 20:00</p>
+        <span><i class="material-icons">phone_in_talk</i>Teléfono</span>
+        <p>(+84)850 5401 <br/>(+51) 957 771 841</p>
+      </div>
+      
+      <div class="redes">
+        <p>Síguenos en:</p>
+        <ul>
+          <li class="fb">
+            <a href="#"><img src="imagenes/fb.svg" /></a>
+          </li>
+          <li class="inst">
+            <a href="#"><img src="imagenes/instagram.svg" /></a>
+          </li>
+          <li class="youtube">
+            <a href="#"><img src="imagenes/youtube.svg" /></a>
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <img src="imagenes/libro-de-reclamaciones.png" alt="Libro de reclamaciones" class="reclamos"/>
+      </div>
+    </footer>
+    <div class="derechos">Made with <span>♥</span> by Miriam Molina</div>
+    <div class="arrow"><a href="#navegacion"><span>↑</span></a></div>
+  </body>
+</html>
